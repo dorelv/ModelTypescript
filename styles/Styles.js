@@ -14,6 +14,11 @@ export const Styles = StyleSheet.create({
         backgroundColor: 'blue',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    text: {
+        fontSize: 18,
+        color: '#fff',
+        fontWeight: 'bold'
     }
      
 })

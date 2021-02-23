@@ -5,18 +5,29 @@ import {
 
 import {Styles} from '../styles/Styles'
 
-export default Home = ({ route, navigation }) => {
+type RouteParams = {
+    params : {value: string}
+}
 
-    const {home} = Styles
+type Props = {
+    route: RouteParams
+}
+
+const Home:React.FC<Props> = ({ route }) => {
+
+    const {home, text} = Styles
+    const {value} = route.params
 
     return (
 
         <SafeAreaView style={home}>
-            <Text>Home page</Text>
+            <Text style={text}>{value}</Text>
         </SafeAreaView>
 
     );
 
 };
+
+export default Home
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
