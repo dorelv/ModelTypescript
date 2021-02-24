@@ -13,7 +13,7 @@ type Props = {
     route: RouteParams
 }
 
-const Home:React.FC<Props> = ({ route }) => {
+const Home:React.FC<Props> = ({ route }:Props) => {
 
     const {home, text} = Styles
     const {value} = route.params
