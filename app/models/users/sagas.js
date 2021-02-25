@@ -10,7 +10,9 @@ function* handler() {
 }
 
 function* getAllUserInfo(action) {
+
     console.log(action)
+
     try{
         ////Api call
         yield put({

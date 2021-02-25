@@ -11,6 +11,7 @@ import {Provider} from 'react-redux'
 
 import Login from './src/Login';
 import Home from './src/Home';
+import FirstPage from './src/FirstPage';
 
 //////////////////////////////
 
@@ -20,7 +21,8 @@ function App() {
   return (
     <Provider store={store}>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator initialRouteName="FirstPage">
+        <Stack.Screen name="FirstPage" component={FirstPage} options={{headerShown: true}} />
         <Stack.Screen name="Login" component={Login} options={{headerShown: true}} />
         <Stack.Screen name="Home" component={Home} options={{headerShown: true}} />
       </Stack.Navigator>
