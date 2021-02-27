@@ -9,9 +9,8 @@ import {store} from './store'
 import {Provider} from 'react-redux'
 /////////////////////////////////pagine
 
-import Login from './src/Login';
-import Home from './src/Home';
 import FirstPage from './src/FirstPage';
+import SecondPage from './src/SecondPage';
 
 //////////////////////////////
 
@@ -23,8 +22,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="FirstPage">
         <Stack.Screen name="FirstPage" component={FirstPage} options={{headerShown: true}} />
-        <Stack.Screen name="Login" component={Login} options={{headerShown: true}} />
-        <Stack.Screen name="Home" component={Home} options={{headerShown: true}} />
+        <Stack.Screen name="SecondPage" component={SecondPage} options={{headerShown: true}} />   
       </Stack.Navigator>
     </NavigationContainer>
     </Provider>

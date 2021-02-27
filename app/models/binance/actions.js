@@ -1,7 +1,0 @@
-const CLIENT_INFO = 'binance/CLIENT_INFO'
-const GET_CLIENT_INFO_SUCCESS = 'binance/GET_CLIENT_INFO_SUCCESS'
-
-export {
-    CLIENT_INFO,
-    GET_CLIENT_INFO_SUCCESS
-}

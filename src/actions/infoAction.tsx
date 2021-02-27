@@ -15,7 +15,7 @@ function* apiSaga() {
 
     try{
         const time = yield call(getTimeBinance)
-        yield put(apiSuccess({messaggio: time}));
+        yield put(apiSuccess({messaggio: JSON.stringify(time)}));
     }catch (err){
         ////errori
     } 

@@ -4,10 +4,15 @@ import {
 } from '../actions/types';
   
   const INITIAL_STATE = {
-    messaggio: 0
+    messaggio: ''
   };
+
+  type Red = {
+    type: string,
+    payload: {messaggio: string}
+  }
   
-  export default (state = INITIAL_STATE, action) => { ///parametri stato e azione
+  export default (state = INITIAL_STATE, action: Red) => { ///parametri stato e azione
   
     switch (action.type) {
       case API_SUCCESS:      
