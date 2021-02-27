@@ -9,18 +9,21 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { apiRequest } from './actions/types';
 
+type State = {
+  messaggioReducer : {messaggio: string}
+}
 
-export default FirstPage = () => {
+const FirstPage:React.FC = () => {
 
     const {login, text} = Styles
 
     const dispatch = useDispatch()
-    const reducerState = useSelector(state => state)
+    const reducerState = useSelector((state:State) => state)
     const {messaggio} = reducerState.messaggioReducer
 
     useEffect(()=> {
 
-      console.log('cioa')
+      console.log(reducerState)
 
       dispatch(apiRequest())
 
@@ -38,6 +41,7 @@ export default FirstPage = () => {
 
 };
 
+export default FirstPage
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
