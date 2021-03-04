@@ -1,0 +1,11 @@
+1. npx react-native init MyApp --template react-native-template-typescript
+2. Creo un repository in GitHub 
+3. Git init
+4. git remote add origin https://github.com/dorelv/ModelTypescript.git
+5. Git add.
+6. Git commit -m “primo commit”
+7. git push -u origin master
+8. Installo npm install @react-navigation/native e tutti I derivati (https://reactnavigation.org/docs/getting-started)
+9. Ricordo di mettere import 'react-native-gesture-handler'; nell’index
+10. Ricordarsi di rimuovere le dipendenze da flipper dal podfile e tutte le cartelle di test o altri dispositivi
+11. npx pod-install (per installare i pods)
